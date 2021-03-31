@@ -1,5 +1,12 @@
 ---
 title: Add new node in jenkins
+date: 2021/3/29 20:46:25
+updated: 2013/3/31 23:03:25
+tags:
+- Jenkins
+- Guide
+categories:
+- DevOps
 ---
 ## Prepare Node
 1. Create new linux machine and config network, storage, security group and etc.
