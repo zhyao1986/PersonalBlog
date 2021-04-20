@@ -58,5 +58,32 @@ Alias=dbus-fi.w1.wpa_supplicant1.service
 ```
 * Enable the service
 `sudo systemctl enable wpa_supplicant.service`
+### Set static IP
+* Get config file
+Using command `ls /etc/netplan`, in our ubuntu, the file name is "50-cloud-init.yaml"
+* Edit file as below
+```
+# This file is generated from information provided by the datasource.  Changes
+# to it will not persist across an instance reboot.  To disable cloud-init's
+# network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    ethernets:
+        eth0:
+            dhcp4: true
+            optional: true
+        wlan0:
+            dhcp4: no
+            addresses: [192.168.0.10/24]
+            optional: true
+            gateway4: 192.168.0.1
+            nameservers:
+                    addresses: [8.8.8.8,8.8.4.4,192.168.0.1]
+    version: 2
+```
+* Apply config with `sudo netplan apply`
+* Check result with `ip a`
 ### Reference
+https://pimylifeup.com/ubuntu-20-04-static-ip-address/
 https://cloud-atlas.readthedocs.io/zh_CN/latest/linux/ubuntu_linux/network/wpa_supplicant.html
