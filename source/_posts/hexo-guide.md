@@ -3,7 +3,6 @@ title: hexo guide
 date: 2021-03-31 23:04:39
 tags:
 - Jenkins
-- Guide
 categories:
 - DevOps
 ---
