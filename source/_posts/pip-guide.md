@@ -43,8 +43,31 @@ python -m pip install --upgrade pip
    * unset: Unset the value associated with name
    * debug: List the configuration files and values defined under them
 
+## 非官方源
+* 命令行
+```
+pip install --trusted-host [server] --extra-index-url http://[server]/simple [package name]
+```
+* pip.conf/pip.ini
+```
+[global]
+index-url = https://pypi.org/simple
+extra-index-url = [镜像源或者私有源]
+trusted-host = 
+    [服务器域名或者IP地址]
+timeout = 60
+```
+* .netrc
+```
+machine [域名或者IP]
+login [用户名]
+password [密码]
+machine [域名或者IP]
+login [用户名]
+password [密码]
+```
 
-
+## 
 ## Error and Warning
 ### Invalid distribution
 遇到下面的warning:
