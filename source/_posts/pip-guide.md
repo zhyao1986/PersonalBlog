@@ -67,7 +67,6 @@ login [用户名]
 password [密码]
 ```
 
-## 
 ## Error and Warning
 ### Invalid distribution
 遇到下面的warning:
