@@ -11,7 +11,7 @@ categories:
 
 ## Install WSL
 TODO
-
+![test](wsl-guide/test.jpg)
 ## Network
 ### Connect Cisco Anyconnect VPN
 1. Connect Cisco Anyconnect VPN, then open up powershell as Administrator and get DNS by following commands:
