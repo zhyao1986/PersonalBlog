@@ -37,7 +37,7 @@ copy:
 social:
   fab fa-github: https://github.com/zhyao1986 || Github
   fas fa-envelope: mailto:zhyao1986@hotmail.com || Email
-  fas fa-linkedin: https://github.com/zhyao1986 || Linkdin
+  fa-brands fa-linkedin: https://www.linkedin.com/in/zhyao1986 || Linkdin
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -116,7 +116,7 @@ category_per_img:
 
 cover:
   # display the cover or not (是否顯示文章封面)
-  index_enable: true
+  index_enable: false
   aside_enable: true
   archives_enable: true
   # the position of cover in home page (封面顯示的位置)
@@ -139,7 +139,7 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
@@ -165,7 +165,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 4
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # anchor
